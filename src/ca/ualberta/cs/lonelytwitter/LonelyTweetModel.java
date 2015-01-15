@@ -5,6 +5,7 @@ import java.util.Date;
 public abstract class LonelyTweetModel {
 	private String text;
 	private Date timestamp;
+	
 	public String getText() {
 		return text;
 	}

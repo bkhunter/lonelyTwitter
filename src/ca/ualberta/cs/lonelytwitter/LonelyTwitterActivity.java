@@ -49,6 +49,22 @@ public class LonelyTwitterActivity extends Activity {
 	@Override
 	protected void onStart() {
 		// TODO Auto-generated method stub
+		
+		User u = new Author(); // uses the default constructor to create a new object
+		Friendship f = new Friend();
+		
+		/* could also do Object u = new Author(); for line above
+		However the line below doesn't work anymore*/
+		
+		//type = an array of users 
+		ArrayList<User> array = new ArrayList<User>();
+		
+		try {
+			u.setUsername("joe"); // calls the set user-name code described in the author sub-class
+		} catch (IOException e) { // could also use catch (exception e), but that's novice
+			
+		}
+		
 		super.onStart();
 		String[] tweets = loadFromFile();
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
