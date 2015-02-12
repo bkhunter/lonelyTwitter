@@ -4,7 +4,11 @@ import java.util.Date;
 
 public abstract class LonelyTweetModel {
 	private String text;
+<<<<<<< HEAD:lonelyTwitter/src/ca/ualberta/cs/lonelytwitter/LonelyTweetModel.java
 	protected Date timestamp;
+=======
+	private Date timestamp;
+>>>>>>> e39fb932adbdea62103a8ed59f64e36643ab71c5:src/ca/ualberta/cs/lonelytwitter/LonelyTweetModel.java
 	
 	public String getText() {
 		return text;
